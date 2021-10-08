@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    
+    <title>Lab 4: GNH Website</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../style.css"/>
+</head>
+
+<body>
+    
+	<div class="nav-bar">
+		<img id="logo" src="../images/RPIlogo.png" alt= "RPI logo">
+		<a class = "active" href="sign_up_tutoring.html">Tutoring Sign-Up Form</a>
+		<a href="events_activities.html">Events and Activities</a>
+		<a href="../homepage.html">Home</a>
+  </div>
+  
+<div class="pcontainer" id="pcontainer">
+<h1>GNH Tutoring</h1>
+
+ 
+  <p>Gamma Nu Eta tutoring will take place on Wednesdays from 1pm to 2pm. Tutoring will be in-person at the ITWS Lounge, which is located on the second floor of the Lally Building, right across from Linda’s office.</p>
+      
+  <p>At these tutoring sessions, Gamma Nu Eta can help you with any course in your ITWS degree program. This includes ITWS core classes, such as Intro to ITWS and Web Systems, or classes outside of ITWS, such as Computer Science 1 and Data Structures. We can also help with any questions that you might have about career development, resumes, as well as just general questions about RPI. As we continue into this semester, we may adjust the time, place, and format of tutoring as circumstances change. </p>
+
+  <p>If you have any questions or concerns about Gamma Nu Eta tutoring this semester, please feel free to reach out to either Andrew Smith or any of the other Gamma Nu Eta officers, and we will do our best to assist you.</p>
+  <h4>Sign-Up for Tutoring Below!</h4>
+  <hr/><hr/>
+
+
+
+<div id="bodyBlock">
+    <form id="addForm" name="addForm" method="post">
+      <fieldset> 
+        <h1 id="formHeader">GNH Tutoring Sign-Up Form</h1>
+        <div class="formData">
+
+          <label class="field" for="firstName">Full Name:</label>
+
+          <div class="value"><input type="text" size="60" name="firstName" id="firstName" placeholder = "Please enter your name here" value="" required></div>
+          
+          <label class="field" for="email">RPI Email:</label>
+          <div class="value"><input type="text" size="60" name="email" id="email" placeholder = "Please enter your RPI email here" value=""/></div>
+
+          <label class="field" for="email">RCS ID</label>
+          <div class="value"><input type="text" size="60" name="rcsid" id="rcsid" placeholder = "Please enter your RCS ID here" value=""/></div>
+          
+          <label class="field" for="year">Class Year:</label>
+          <div class="value"><input type="text" size="60" name="year" id="year" placeholder = "Please enter your class year here" value=""></div>
+
+          <label class="field" for="date">Tutoring Date:</label>
+          <div class="value"><input type="text" size="60" name="date" id="date" placeholder = "Please enter your the day that you're coming in for tutoring (ex: MM-DD)" value=""></div>
+          
+          <label class="field" for="message">Questions/Comments: </label>
+          <!-- Here I have added two of my functions from the javascript file to run onclick and onblur to make the default appear and disappear -->
+          <div class="value"><textarea rows="4" cols="40" name="message" id="message" placeholder = "Please enter any questions or comments here"></textarea></div>
+          
+          <input type="submit" value="Submit" id="submit" name="submit" onclick = "return validate(this)">
+        </div>
+      </fieldset>
+    </form>
+    
+</div>
+</div>
+
+<div class = "footer">  
+  <div class = "flex-container">
+    <div>
+      <p>Connect with us on Social Media!</p>
+      <a href="https://twitter.com/RPI_ITWS"> <img src="../social_media_images/twitter.png" alt = "Twitter logo" style="width:40px;height:40px"></a>
+      <a href="https://www.facebook.com/gammanueta"><img src="../social_media_images/facebook.png" alt = "Facebook logo" style="width:40px;height:40px"></a>
+      <a href="https://www.tiktok.com/@itwsatrpi?"><img src="../social_media_images/tiktok.png" alt = "tiktok logo" style="width:40px;height:40px"></a>
+      <a href="https://itwsatrpi.blogspot.com/"><img src="../social_media_images/instagram.png" alt = "instagram logo" style="width:40px;height:40px"></a>
+      <a href="https://itwsatrpi.blogspot.com/"><img src="../social_media_images/linkedin.png" alt = "linkedin logo" style="width:40px;height:40px"></a>
+    </div>
+    <div>
+      <a><img src="../images/Logo_Color_Transparent.png" alt = "transparent logo" style="width:20%;height:20%"></a>
+    </div>
+    <div>
+      <button id="contactBtn">Contact Us!</button>
+      <div id="contactInfo"></div>
+    </div>
+  </div>
+</div>
+<script src="/main.js"></script>
+</body>
+</html>
